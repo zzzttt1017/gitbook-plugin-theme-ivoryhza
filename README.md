@@ -7,10 +7,10 @@ Add the theme to your book's configuration `book.json` or `book.js`:
 ```js
 {
     "plugins": [
-        "theme-ivory"
+        "theme-ivoryhza"
     ],
     "variables": {
-        "themeIvory":{
+        "themeIvoryhza":{
             "nav":[
                 {
                     "url":"http://...",
@@ -21,7 +21,7 @@ Add the theme to your book's configuration `book.json` or `book.js`:
         },
     },
     "pluginsConfig": {
-        "theme-ivory":{
+        "theme-ivoryhza":{
             "search-placeholder":"搜索", //搜索框提示信息
             "logo":"./logo.png", //logo地址
             "appleTouchIconPrecomposed152":"./logo.png", //logo地址

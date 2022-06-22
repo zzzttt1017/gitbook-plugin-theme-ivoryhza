@@ -15,7 +15,7 @@ module.exports = {
     },
     hooks: {
         finish: function () {
-            var configOption = this.config.get('pluginsConfig')['theme-ivory'];
+            var configOption = this.config.get('pluginsConfig')['theme-ivoryhza'];
             var output = configOption ? (configOption.output || '_book') : '_book';
             var pathFile;
 
@@ -43,7 +43,7 @@ module.exports = {
             pathFile = configOption && configOption.logo;
             if (pathFile) {
                 var logoPath = path.join(process.cwd(), pathFile);
-                var pluginLogoPath = path.join(process.cwd(), output, 'gitbook', 'gitbook-plugin-theme-ivory', "logo.png");
+                var pluginLogoPath = path.join(process.cwd(), output, 'gitbook', 'gitbook-plugin-theme-ivoryhza', "logo.png");
                 if (fs.existsSync(logoPath)) {
                     fs.writeFileSync(pluginLogoPath, fs.readFileSync(logoPath));
                 }
@@ -53,11 +53,11 @@ module.exports = {
             var _label = 'File Modify: ',
                 _format = 'YYYY-MM-DD HH:mm:ss',
                 _copy = ''
-            if (this.options.pluginsConfig['tbfed-pagefooter']) {
-                _label = this.options.pluginsConfig['tbfed-pagefooter']['modify_label'] || _label;
-                _format = this.options.pluginsConfig['tbfed-pagefooter']['modify_format'] || _format;
+            if (configOption) {
+                _label = configOption['modify_label'] || _label;
+                _format = configOption['modify_format'] || _format;
 
-                var _c = this.options.pluginsConfig['tbfed-pagefooter']['copyright'];
+                var _c = configOption['copyright'];
                 _copy = _c ? _c + '' + _copy : _copy;
             }
             var _copy = '<span class="copyright">' + _copy + '</span>'
