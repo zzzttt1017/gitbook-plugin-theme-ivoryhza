@@ -1,0 +1,29 @@
+{
+  "name": "gitbook-plugin-theme-ivoryhza",
+  "author": {
+    "name": "someCat"
+  },
+  "bugs": {
+    "url": "https://github.com/zzzttt1017/gitbook-plugin-theme-ivoryhza/issues"
+  },
+  "dependencies": {
+    "moment": "^2.10.6"
+  },
+  "description": "A Gitbook theme for HZ",
+  "engines": {
+    "gitbook": ">=3.0.0"
+  },
+  "homepage": "https://github.com/zzzttt1017/gitbook-plugin-theme-ivoryhza#readme",
+  "keywords": [
+    "gitbook",
+    "theme",
+    "ivoryhza"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzzttt1017/gitbook-plugin-theme-ivoryhza.git"
+  },
+  "scripts": {},
+  "version": "1.0.0"
+}
