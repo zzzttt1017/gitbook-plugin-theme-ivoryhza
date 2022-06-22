@@ -50,6 +50,7 @@ module.exports = {
             }
         },
         'page:before': function (page) {
+            var configOption = this.config.get('pluginsConfig')['theme-ivoryhza'];
             var _label = 'File Modify: ',
                 _format = 'YYYY-MM-DD HH:mm:ss',
                 _copy = ''
